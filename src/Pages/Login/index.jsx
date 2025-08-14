@@ -8,7 +8,7 @@ import { postData } from "../../utils/api";
 import { myContext } from "../../App";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { firebaseapp } from "../../firebase";
-import logo from "../../assets/logofurn.png";
+import logo from "../../assets/logofurn.PNG";
 
 const auth = getAuth(firebaseapp);
 const Googleprovider = new GoogleAuthProvider();
