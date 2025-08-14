@@ -23,7 +23,7 @@ import { myContext } from "../../App";
 import { fetchData } from "../../utils/api";
 import Drawer from "@mui/material/Drawer";
 import Search from "../Search";
-import logo from "../../assets/logofurn.png";
+import logo from "../../assets/logofurn.PNG";
 import Categorycollapse from "../categorycollapse";
 import { IoMdClose } from "react-icons/io";
 import Category from "./Navigation/Category";
