@@ -25,7 +25,7 @@ import { myContext } from "../../App";
 import Qtybox from "../Qtybox";
 
 // Import custom styles for a classy and cozy look
-import "./ProductDetails.css";
+import "./productdetails.css";
 
 export default function ProductDetails() {
   const { id } = useParams();
