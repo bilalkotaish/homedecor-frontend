@@ -1,0 +1,74 @@
+@media only screen and (max-width: 992px) and (min-width: 320px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .mobileNav a.active button{
+        @apply  text-primary !important
+    }
+    .navigation ul{
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: block !important;
+        text-align: center;
+    }
+    .navigation ul li{
+        display: inline-block !important;
+        vertical-align: top;
+    }
+    .navigation ul::-webkit-scrollbar{
+        display: none !important;
+    }
+    .scrollableBox .col{
+        display: inline-block !important;
+        vertical-align: top !important;
+        margin-right: 12px !important;
+        width: 200px !important;
+
+    }
+ 
+  
+  
+}
+@media only screen and (max-width: 767px) and (min-width: 320px) {
+    .scrollable.tabs button{
+        font-size: 13px !important;
+    }
+    .sidebar{
+        max-height: 100vh !important;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .sidebar::-webkit-scrollbar{
+        display: none;
+    }
+    .sidebarwrapper.open{
+        bottom: 1px !important;
+        opacity: 1;
+    }
+    .productItem .addtocartbtn{
+        padding: 7px 13px !important;
+    }
+    .cartpanel .MuiPaper-root{
+        width: 330px !important;
+    }
+    .addresspanel .MuiPaper-root {
+        width: 330px !important;
+      }
+}
+@media only screen and (max-width: 575px) and (min-width: 320px) {
+    .cartpanel .MuiPaper-root{
+        width: 300px !important;
+    }
+    .addresspanel .MuiPaper-root {
+        width: 300px !important;
+      }
+}
+@media only screen and (max-width: 757px) and (min-width: 575px) {
+    .cartpanel .MuiPaper-root{
+        width: 400px !important;
+    }
+    .addresspanel .MuiPaper-root {
+        width: 400px !important;
+      }
+}

@@ -1,0 +1,297 @@
+/* ProductDetails.css */
+
+/* General Typography and Colors */
+body {
+  font-family: "Lora", serif; /* A classic, elegant serif font */
+  color: #333; /* Darker text for better readability and sophistication */
+}
+
+/* Headings - Using Lora for a classy feel */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
+/* Accent Color - A warm, inviting brown */
+:root {
+  --brown-50: #fdfaf7;
+  --brown-100: #f5ede6;
+  --brown-200: #ebdcd3;
+  --brown-300: #ddc4b5;
+  --brown-400: #c9a794;
+  --brown-500: #b97b57; /* Original accent color */
+  --brown-600: #a36a49; /* Slightly darker for hover/active states */
+  --brown-700: #8d593c; /* Main accent for buttons/strong elements */
+  --brown-800: #75472f;
+  --brown-900: #5c3722;
+}
+
+.text-brown-50 {
+  color: var(--brown-50);
+}
+.text-brown-100 {
+  color: var(--brown-100);
+}
+.text-brown-200 {
+  color: var(--brown-200);
+}
+.text-brown-300 {
+  color: var(--brown-300);
+}
+.text-brown-400 {
+  color: var(--brown-400);
+}
+.text-brown-500 {
+  color: var(--brown-500);
+}
+.text-brown-600 {
+  color: var(--brown-600);
+}
+.text-brown-700 {
+  color: var(--brown-700);
+}
+.text-brown-800 {
+  color: var(--brown-800);
+}
+.text-brown-900 {
+  color: var(--brown-900);
+}
+
+.bg-brown-50 {
+  background-color: var(--brown-50);
+}
+.bg-brown-100 {
+  background-color: var(--brown-100);
+}
+.bg-brown-200 {
+  background-color: var(--brown-200);
+}
+.bg-brown-300 {
+  background-color: var(--brown-300);
+}
+.bg-brown-400 {
+  background-color: var(--brown-400);
+}
+.bg-brown-500 {
+  background-color: var(--brown-500);
+}
+.bg-brown-600 {
+  background-color: var(--brown-600);
+}
+.bg-brown-700 {
+  background-color: var(--brown-700);
+}
+.bg-brown-800 {
+  background-color: var(--brown-800);
+}
+.bg-brown-900 {
+  background-color: var(--brown-900);
+}
+
+.border-brown-50 {
+  border-color: var(--brown-50);
+}
+.border-brown-100 {
+  border-color: var(--brown-100);
+}
+.border-brown-200 {
+  border-color: var(--brown-200);
+}
+.border-brown-300 {
+  border-color: var(--brown-300);
+}
+.border-brown-400 {
+  border-color: var(--brown-400);
+}
+.border-brown-500 {
+  border-color: var(--brown-500);
+}
+.border-brown-600 {
+  border-color: var(--brown-600);
+}
+.border-brown-700 {
+  border-color: var(--brown-700);
+}
+.border-brown-800 {
+  border-color: var(--brown-800);
+}
+.border-brown-900 {
+  border-color: var(--brown-900);
+}
+
+/* Layout Enhancements */
+.product-detail-layout {
+  gap: 3rem; /* Increase gap for more breathing room */
+}
+
+/* Image Section */
+.product-images-section {
+  background-color: #fcfcfc; /* Slightly off-white background */
+  border-radius: 1rem; /* Softer rounded corners */
+  padding: 1.5rem; /* Add some padding */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Softer shadow */
+}
+
+.product-thumbnails {
+  /* No specific additional styles needed here beyond what Tailwind provides */
+}
+
+.thumbnail-item {
+  border-radius: 0.75rem; /* Rounded corners for thumbnails */
+  overflow: hidden;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.thumbnail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail-item:hover .thumbnail-image {
+  transform: scale(1.08); /* Slightly more zoom on hover */
+}
+
+.main-image-container {
+  width: 100%; /* Ensure it takes full available width */
+  height: 350px; /* Or a fixed height, or aspect ratio based on content */
+  position: relative; /* Often helpful for positioning child elements */
+  /* Remove or adjust any float, display: flex, or absolute positioning that might conflict */
+}
+
+.main-product-image {
+  object-fit: cover; /* Ensure the image fits without cropping in the zoom area */
+  width: 100%;
+  height: 50%;
+  aspect-ratio: 1/1;
+}
+
+/* Swiper Navigation Customization */
+.product-swiper-vertical .swiper-button-prev,
+.product-swiper-vertical .swiper-button-next {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg) !important; /* Rotate arrows for vertical navigation */
+  width: 2rem;
+  height: 2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brown-600);
+  z-index: 10;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.product-swiper-vertical .swiper-button-prev:hover,
+.product-swiper-vertical .swiper-button-next:hover {
+  background-color: var(--brown-600);
+  color: white;
+}
+
+.product-swiper-vertical .swiper-button-prev {
+  top: 0.5rem;
+}
+
+.product-swiper-vertical .swiper-button-next {
+  bottom: 0.5rem;
+}
+
+.product-main-swiper .swiper-button-next:after,
+.product-main-swiper .swiper-button-prev:after {
+  font-size: 1.5rem !important; /* Larger arrows */
+  color: var(--brown-600) !important; /* Accent color for arrows */
+  font-weight: bold;
+}
+
+.product-main-swiper .swiper-button-next,
+.product-main-swiper .swiper-button-prev {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Slightly translucent background */
+  border-radius: 50%;
+  width: 3rem; /* Larger hit area */
+  height: 3rem;
+  transition: background-color 0.3s;
+}
+
+.product-main-swiper .swiper-button-next:hover,
+.product-main-swiper .swiper-button-prev:hover {
+  background-color: var(--brown-100); /* Lighter brown on hover */
+}
+
+/* Product Info Section */
+.product-info-section {
+  /* No specific additional styles beyond what Tailwind provides */
+}
+
+/* Buttons */
+.MuiButton-root {
+  font-family: "Inter", sans-serif; /* A clean sans-serif for buttons */
+  text-transform: none !important; /* Keep capitalization natural */
+  letter-spacing: 0.02em; /* Slightly more spaced letters for elegance */
+}
+
+/* Quantity Box */
+.qtybox-container {
+  /* Assuming Qtybox has a container class */
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  transition: border-color 0.3s ease;
+}
+
+.qtybox-container:focus-within {
+  border-color: var(--brown-500); /* Highlight on focus */
+}
+
+/* Rating Stars */
+.MuiRating-iconFilled {
+  color: #ffc107 !important; /* A standard gold for stars */
+}
+
+/* Breadcrumbs */
+.MuiBreadcrumbs-separator {
+  margin: 0 8px; /* Adjust spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-detail-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .product-images-section,
+  .product-info-section {
+    width: 100%;
+  }
+
+  .product-thumbnails {
+    display: none; /* Hide vertical thumbnails on small screens */
+  }
+
+  .main-image-container {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .product-main-swiper .swiper-button-next,
+  .product-main-swiper .swiper-button-prev {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
