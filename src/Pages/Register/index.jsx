@@ -9,7 +9,7 @@ import { myContext } from "../../App";
 import CircularProgress from "@mui/material/CircularProgress";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { firebaseapp } from "../../firebase";
-import logo from "../../assets/logofurn.png";
+import logo from "../../assets/logofurn.PNG";
 
 const auth = getAuth(firebaseapp);
 const Googleprovider = new GoogleAuthProvider();
